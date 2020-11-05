@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#F8E0E6"
+    app:cardElevation="@dimen/cardview_default_elevation"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="8dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+    <EditText
+        android:id="@+id/edtTenKhoahoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Khóa Học"
+        android:textColorHint="#000000"/>
+    <EditText
+        android:id="@+id/edtSoBuoiHoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số buổi học"
+        android:textColorHint="#000000"/>
+    <EditText
+        android:id="@+id/edtTenGiangVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Giảng viên"
+        android:textColorHint="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tvNgaybatdau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ngày bắt đầu"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/dateBatdau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:src="@drawable/date"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tvNgayKetthuc"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ngày kết thúc"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/dateKetthuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:src="@drawable/date"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tvNgaythi"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ngày thi"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/dateThi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:src="@drawable/date"/>
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
